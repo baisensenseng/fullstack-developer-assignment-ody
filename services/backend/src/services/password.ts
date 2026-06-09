@@ -1,5 +1,5 @@
 const encoder = new TextEncoder();
-const iterations = 120_000;
+const iterations = 100_000;
 const keyLength = 32;
 
 /**

@@ -52,7 +52,13 @@ await db
     email: 'demo@ody.local',
     passwordHash: await hashPassword('password123')
   })
-  .onConflictDoNothing({ target: users.email });
+  .onConflictDoUpdate({
+    target: users.email,
+    set: {
+      name: sql`excluded.name`,
+      passwordHash: sql`excluded.password_hash`
+    }
+  });
 
 await db.insert(menuCategories).values([
   { id: ids.categories.breakfast, name: 'Breakfast', sortOrder: 1 },
