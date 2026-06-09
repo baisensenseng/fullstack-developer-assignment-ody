@@ -1,0 +1,1 @@
+ALTER TABLE "ordering_settings" ADD COLUMN "opening_hours" varchar(255) DEFAULT 'Mon-Fri 09:00-21:00; Sat-Sun 10:00-22:00' NOT NULL;
