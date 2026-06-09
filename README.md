@@ -12,6 +12,8 @@
     <a href="./docs/technical_decisions.md"><strong>Technical Decisions</strong></a>
     ·
     <a href="./.env.example"><strong>Environment Template</strong></a>
+    ·
+    <a href="https://ody-dashboard.pages.dev"><strong>Live Demo</strong></a>
   </p>
 
   <p>
@@ -51,6 +53,7 @@ The dashboard targets web through Expo and React Native Web. The backend uses Ho
 - [API Contract Flow](#api-contract-flow)
 - [Environment Variables](#environment-variables)
 - [Quick Start](#quick-start)
+- [Live Deployment](#live-deployment)
 - [Demo Login](#demo-login)
 - [Available Scripts](#available-scripts)
 - [Validation](#validation)
@@ -279,6 +282,13 @@ Default local URLs:
 | --- | --- |
 | Dashboard | `http://localhost:8081` |
 | Backend | `http://localhost:8787` |
+
+## Live Deployment
+
+| Service | URL |
+| --- | --- |
+| Dashboard | https://ody-dashboard.pages.dev |
+| API | https://ody-backend.605835802.workers.dev |
 
 ## Demo Login
 

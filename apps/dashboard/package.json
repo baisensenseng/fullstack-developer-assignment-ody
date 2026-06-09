@@ -7,7 +7,8 @@
     "dev": "expo start --web",
     "lint": "tsc --noEmit",
     "typecheck": "tsc --noEmit",
-    "test": "tsx --test src/screens/dashboard/orders/order-formatters.test.ts src/screens/dashboard/settings/opening-hours.test.ts src/screens/dashboard/settings/settings-formatters.test.ts"
+    "test": "tsx --test src/screens/dashboard/orders/order-formatters.test.ts src/screens/dashboard/settings/opening-hours.test.ts src/screens/dashboard/settings/settings-formatters.test.ts",
+    "build:web": "expo export --platform web"
   },
   "dependencies": {
     "@ody/api-client": "workspace:*",
