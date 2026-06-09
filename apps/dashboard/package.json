@@ -1,0 +1,34 @@
+{
+  "name": "@ody/dashboard",
+  "version": "0.0.0",
+  "private": true,
+  "main": "expo-router/entry",
+  "scripts": {
+    "dev": "expo start --web",
+    "lint": "tsc --noEmit",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test src/screens/dashboard/orders/order-formatters.test.ts src/screens/dashboard/settings/opening-hours.test.ts src/screens/dashboard/settings/settings-formatters.test.ts"
+  },
+  "dependencies": {
+    "@ody/api-client": "workspace:*",
+    "@ody/shared": "workspace:*",
+    "@ody/types": "workspace:*",
+    "@tanstack/react-query": "latest",
+    "expo": "latest",
+    "expo-constants": "latest",
+    "expo-linking": "latest",
+    "expo-router": "latest",
+    "expo-status-bar": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-native": "latest",
+    "react-native-safe-area-context": "latest",
+    "react-native-screens": "latest",
+    "react-native-web": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.2",
+    "@types/react": "latest",
+    "typescript": "latest"
+  }
+}

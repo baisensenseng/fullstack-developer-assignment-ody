@@ -1,0 +1,13 @@
+node_modules
+.turbo
+.expo
+dist
+build
+coverage
+.env
+.env.*
+.dev.vars
+!.env.example
+.wrangler
+.cursor
+resource

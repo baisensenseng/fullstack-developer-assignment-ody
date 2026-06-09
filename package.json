@@ -1,0 +1,20 @@
+{
+  "name": "fullstack-assignment-ody",
+  "private": true,
+  "packageManager": "pnpm@10.24.0",
+  "scripts": {
+    "dev:dashboard": "pnpm --filter @ody/dashboard dev",
+    "dev:backend": "pnpm --filter @ody/backend dev",
+    "gen:contract": "pnpm --filter @ody/backend gen:openapi && pnpm --filter @ody/api-client gen",
+    "lint": "turbo lint",
+    "typecheck": "turbo typecheck",
+    "test": "turbo test",
+    "db:generate": "pnpm --filter @ody/backend db:generate",
+    "db:migrate": "pnpm --filter @ody/backend db:migrate",
+    "db:seed": "pnpm --filter @ody/backend db:seed"
+  },
+  "devDependencies": {
+    "turbo": "latest",
+    "typescript": "latest"
+  }
+}

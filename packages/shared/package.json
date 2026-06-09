@@ -1,0 +1,22 @@
+{
+  "name": "@ody/shared",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "scripts": {
+    "lint": "tsc --noEmit",
+    "typecheck": "tsc --noEmit",
+    "test": "echo 'No tests for @ody/shared'"
+  },
+  "dependencies": {
+    "lucide-react-native": "^1.17.0",
+    "react": "latest",
+    "react-native": "latest"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.17",
+    "typescript": "latest"
+  }
+}

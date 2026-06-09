@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "name": "Ody Restaurant Dashboard",
+    "slug": "ody-restaurant-dashboard",
+    "scheme": "odydashboard",
+    "web": {
+      "bundler": "metro",
+      "output": "single"
+    },
+    "plugins": ["expo-router"]
+  }
+}

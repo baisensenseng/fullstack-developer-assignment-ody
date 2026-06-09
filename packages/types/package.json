@@ -1,0 +1,16 @@
+{
+  "name": "@ody/types",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "scripts": {
+    "lint": "tsc --noEmit",
+    "typecheck": "tsc --noEmit",
+    "test": "echo 'No tests for @ody/types'"
+  },
+  "devDependencies": {
+    "typescript": "latest"
+  }
+}
