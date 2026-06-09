@@ -4,8 +4,24 @@ import { readStoredToken } from './auth-storage';
 import type { ReactNode } from 'react';
 
 const queryClient = new QueryClient();
-const apiBaseUrl = process.env.EXPO_PUBLIC_API_BASE_URL || 'http://localhost:8787';
-setApiBaseUrl(apiBaseUrl);
+
+/**
+ * Description: Resolves the API base URL for local development and deployed web builds.
+ * Parameters: None.
+ * Returns: string - API base URL without a trailing slash.
+ */
+function resolveApiBaseUrl() {
+  const configuredUrl = process.env.EXPO_PUBLIC_API_BASE_URL;
+  if (configuredUrl) return configuredUrl;
+
+  if (typeof window !== 'undefined' && window.location.hostname.endsWith('pages.dev')) {
+    return 'https://ody-backend.605835802.workers.dev';
+  }
+
+  return 'http://localhost:8787';
+}
+
+setApiBaseUrl(resolveApiBaseUrl());
 setAuthToken(readStoredToken());
 
 export type AppProvidersProps = {
