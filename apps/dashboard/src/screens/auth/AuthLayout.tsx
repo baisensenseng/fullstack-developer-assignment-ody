@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
 import { View, useWindowDimensions, type ImageSourcePropType } from 'react-native';
-import { AuthVisual } from '@ody/shared';
+import { AuthVisual, spacing } from '@ody/shared';
 
 export type AuthLayoutProps = {
   children: ReactNode;
@@ -24,7 +24,7 @@ export function AuthLayout({ children, mode, visualSource }: AuthLayoutProps) {
           {children}
         </View>
         {!isCompact ? (
-          <View style={{ width: '50%', flexBasis: '50%', flexGrow: 0, flexShrink: 0, minHeight: height }}>
+          <View style={{ width: '50%', flexBasis: '50%', flexGrow: 0, flexShrink: 0, minHeight: height, padding: spacing.xl }}>
             <AuthVisual mode={mode} backgroundSource={visualSource} />
           </View>
         ) : null}

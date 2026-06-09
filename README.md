@@ -57,6 +57,36 @@ The dashboard targets web through Expo and React Native Web. The backend uses Ho
 - [Tradeoffs and Incomplete Areas](#tradeoffs-and-incomplete-areas)
 - [Documentation](#documentation)
 
+## Screenshots
+
+### Login
+
+![Login screen](docs/screenshots/login.png)
+
+### Dashboard Home
+
+![Dashboard home](docs/screenshots/home.png)
+
+### Orders Workspace
+
+![Orders workspace](docs/screenshots/orders.png)
+
+### Menu Management
+
+![Menu management](docs/screenshots/menu.png)
+
+### CRM Workspace
+
+![CRM workspace](docs/screenshots/crm.png)
+
+### Settings
+
+![Settings screen](docs/screenshots/settings.png)
+
+### UI Library
+
+![UI library](docs/screenshots/ui-library.png)
+
 ## Product Scope
 
 | Area | Capability |

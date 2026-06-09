@@ -1,5 +1,5 @@
 import { ImageBackground, Text, View, type ImageSourcePropType } from 'react-native';
-import { colors } from '../tokens';
+import { colors, radius } from '../tokens';
 
 const signupPoster = 'https://onboardfrontend-production-c.squarecdn.com/builds/cd8955b/_next/static/media/us-poster.0c6c058a.webp';
 
@@ -17,7 +17,7 @@ export function AuthVisual({ mode, backgroundSource }: AuthVisualProps) {
   const isRegister = mode === 'register';
 
   return (
-    <ImageBackground source={backgroundSource ?? { uri: signupPoster }} resizeMode="cover" style={{ width: '100%', height: '100%', flex: 1, minHeight: 560, overflow: 'hidden' }} imageStyle={{}}>
+    <ImageBackground source={backgroundSource ?? { uri: signupPoster }} resizeMode="cover" style={{ width: '100%', height: '100%', flex: 1, minHeight: 560, overflow: 'hidden', borderRadius: radius.lg }} imageStyle={{ borderRadius: radius.lg }}>
       <View style={{ width: '100%', height: '100%', flex: 1, backgroundColor: 'rgba(0,0,0,0.46)', alignItems: 'center', justifyContent: 'center', padding: 56 }}>
         <Text style={{ maxWidth: 620, textAlign: 'center', color: colors.surface, fontSize: 36, lineHeight: 44, fontWeight: '900' }}>
           {isRegister ? 'Start running your restaurant from one focused dashboard.' : 'Welcome back to your restaurant operations hub.'}
